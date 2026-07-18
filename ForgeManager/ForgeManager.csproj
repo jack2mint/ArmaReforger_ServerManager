@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ForgeManager</AssemblyName>
+    <RootNamespace>ForgeManager</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Product>ForgeManager</Product>
+    <Title>ForgeManager</Title>
+    <Description>An Arma Reforger server GUI interface for Windows 10/11.</Description>
+    <Authors>StaticTechGroup</Authors>
+    <Copyright>Copyright © StaticTechGroup</Copyright>
+    <Deterministic>true</Deterministic>
+    <TieredCompilation>true</TieredCompilation>
+    <TieredPGO>true</TieredPGO>
+    <Version>0.2.1</Version>
+    <AssemblyVersion>0.2.1.0</AssemblyVersion>
+    <FileVersion>0.2.1.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../configs/config.minimal.json"
+          Link="configs/config.minimal.json"
+          CopyToOutputDirectory="PreserveNewest"
+          CopyToPublishDirectory="PreserveNewest"
+          ExcludeFromSingleFile="true" />
+  </ItemGroup>
+</Project>
