@@ -1,0 +1,41 @@
+{
+  "bindPort": 2001,
+  "publicPort": 2001,
+  "game": {
+    "name": "ForgeManager | CIE Udachne | Crossplay",
+    "password": "",
+    "passwordAdmin": "",
+    "admins": [],
+    "scenarioId": "{42807BDC0929009F}Missions/CIE_Udachne_Conflict.conf",
+    "maxPlayers": 64,
+    "visible": true,
+    "crossPlatform": true,
+    "gameProperties": {
+      "serverMaxViewDistance": 1600,
+      "serverMinGrassDistance": 150,
+      "networkViewDistance": 1500,
+      "disableThirdPerson": true,
+      "fastValidation": true,
+      "battlEye": true,
+      "VONDisableUI": false,
+      "VONDisableDirectSpeechUI": false,
+      "VONCanTransmitCrossFaction": false
+    },
+    "modsRequiredByDefault": true,
+    "mods": [
+      {
+        "modId": "6530BECA1273AEAB",
+        "name": "CIE Udachne"
+      }
+    ]
+  },
+  "operating": {
+    "lobbyPlayerSynchronise": true,
+    "playerSaveTime": 120,
+    "aiLimit": -1,
+    "slotReservationTimeout": 60,
+    "joinQueue": {
+      "maxSize": 0
+    }
+  }
+}

@@ -1,0 +1,29 @@
+ForgeManager v0.2.1 Responsive UI Static Verification Report
+Generated: 2026-07-21
+
+Result: PASS
+
+[PASS] MainWindow.xaml parses as XML
+[PASS] App.xaml parses as XML
+[PASS] ForgeManager.csproj parses as XML
+[PASS] configs/config.minimal.json parses as JSON
+[PASS] 101 unique named controls
+[PASS] all 88 original backend-bound control names preserved
+[PASS] 56 XAML event handlers resolve in MainWindow.xaml.cs
+[PASS] 49 named application resources are unique
+[PASS] all named StaticResource references resolve
+[PASS] nine direct main navigation destinations preserved
+[PASS] responsive layout controller present
+[PASS] adaptive navigation rail present
+[PASS] adaptive dashboard KPI and detail layouts present
+[PASS] Workshop cards use wrapping layouts
+[PASS] borderless resize support present through WindowChrome
+[PASS] keyboard navigation and dashboard actions present
+[PASS] no pure-white UI background, foreground, or border declarations
+[PASS] CollectionView mutation regression remains guarded
+[PASS] C# delimiter and method-name sanity checks passed
+
+Build execution note:
+This Linux container does not contain the .NET 8 SDK, so this report does not claim an executed compiler build.
+Run .\verify.ps1 -StaticOnly for the fast Windows static pass, then .\verify.ps1 for warning-clean Debug,
+Release, and self-contained win-x64 publish verification.

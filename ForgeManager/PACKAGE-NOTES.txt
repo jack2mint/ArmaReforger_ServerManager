@@ -1,0 +1,26 @@
+ForgeManager source package
+
+Description: An Arma Reforger server GUI interface for Windows 10/11
+Target: Windows 10/11, Visual Studio 2022, .NET 8 WPF
+Version: 0.2.1
+Solution: ForgeManager.sln
+Project: src\ForgeManager\ForgeManager.csproj
+
+This archive contains the complete Visual Studio source project, build and publish scripts,
+a minimal example config, and network diagnostics. It does not include Bohemia Interactive
+binaries, Workshop content, passwords, or a precompiled executable.
+
+Run publish-self-contained.ps1 for a self-contained single-file Windows build.
+Run publish-drop-in.ps1 to publish ForgeManager.exe directly beside ArmaReforgerServer.exe.
+
+Verification:
+  Fast static pass:
+    powershell -ExecutionPolicy Bypass -File .\verify.ps1 -StaticOnly
+
+  Full build and publish pass:
+    powershell -ExecutionPolicy Bypass -File .\verify.ps1
+
+The verification script parses the project/XAML/JSON, checks event handlers, responsive UI contracts,
+branding, and dark-surface rules. Full mode then builds Debug and Release with warnings treated as
+errors, publishes win-x64 single-file, and confirms ForgeManager.exe plus
+configs\config.minimal.json are present.

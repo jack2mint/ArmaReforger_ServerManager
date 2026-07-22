@@ -1,0 +1,12 @@
+ForgeManager responsive UI redesign
+
+- New borderless ForgeStudio blue application shell and custom window controls.
+- Adaptive left navigation rail switches to a horizontally scrollable top rail below 1180px.
+- Dashboard KPI cards adapt between 4, 2, and 1 columns.
+- Dashboard details stack automatically on narrower windows.
+- Guided configuration and Settings use wrapping field cards instead of rigid fixed grids.
+- SteamCMD setup has a clearer install workflow and dedicated console surface.
+- Added Ctrl+1 through Ctrl+8 navigation and Ctrl+, for Settings.
+- Added dashboard jump actions and copy-local-target interaction.
+- All existing named controls and backend event handlers remain connected.
+- Dark-only surfaces; no white borders, inputs, dropdowns, or list surfaces.

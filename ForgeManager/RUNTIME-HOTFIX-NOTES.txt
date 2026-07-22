@@ -1,0 +1,11 @@
+ForgeManager v0.2.1 Runtime CollectionView Hotfix
+
+Fixed:
+- Removed the invalid CollectionView.DeferRefresh scope around ObservableCollection log mutations.
+- Added an output-flush re-entry guard for high-volume server output.
+- Added a verification check preventing the unsafe log-view defer pattern from returning.
+
+Crash addressed:
+System.InvalidOperationException: Cannot change or check the contents or Current position of CollectionView while Refresh is being deferred.
+
+Run verify.ps1 on Windows with the .NET 8 SDK to perform Debug, Release, warnings-as-errors, and win-x64 publish checks.
